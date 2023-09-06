@@ -1,0 +1,23 @@
+.background {
+    background-color: #000000;
+}
+
+.loginForm {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+input {
+    width: 300px;
+}
+
+.link {
+    text-decoration: none;
+    color: grey;
+}
+
+button {
+    width: 300px;
+}
