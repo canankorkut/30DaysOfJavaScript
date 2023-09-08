@@ -13,6 +13,11 @@ input {
     width: 300px;
 }
 
+.error {
+    color: red;
+    margin-bottom: 5px;
+}
+
 .link {
     text-decoration: none;
     color: grey;
