@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="background d-flex align-items-center flex-column">
+        <h1 class="mt-4">Survey Form</h1>
+        <form>
+            <div class="question" id="q1">
+                <label for="name">Question 1: What's your name?</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="question" id="q2">
+                <label for="surname">Question 2: What's your surname?</label>
+                <input type="text" id="surname" name="surname">
+            </div>
+
+            <div class="question" id="q3">
+                <label for="age">Question 3: What's your age?</label>
+                <input type="number" id="age" name="age">
+            </div>
+
+            <div class="question" id="q4">
+                <label for="experience">Question 4: What's your level of experience?</label>
+                <div class="option">
+                    <label for="beginner">Beginner</label>
+                    <input type="radio" id="beginner" name="experience" value="beginner">
+                </div>
+                <div class="option">
+                    <label for="beginner">Middle</label>
+                    <input type="radio" id="middle" name="experience" value="middle">
+                </div>
+                <div class="option">
+                    <label for="beginner">Expert</label>
+                    <input type="radio" id="expert" name="experience" value="expert">
+                </div>
+            </div>
+
+            <div class="question" id="q5">
+                <label for="q5">Question 5: Which programming languages ​do you know?</label>
+                <div class="option">
+                    <label for="python">Python</label>
+                    <input type="checkbox" id="python" name="programs" value="python">
+                </div>
+                <div class="option">
+                    <label for="javascript">JavaScript</label>
+                    <input type="checkbox" id="javascript" name="programs" value="javascript">
+                </div>
+                <div class="option">
+                    <label for="java">Java</label>
+                    <input type="checkbox" id="java" name="programs" value="java">
+                </div>
+                <div class="option">
+                    <label for="csharp">C#</label>
+                    <input type="checkbox" id="csharp" name="programs" value="csharp">
+                </div>
+                <div class="option">
+                    <label for="php">PHP</label>
+                    <input type="checkbox" id="php" name="programs" value="php">
+                </div>
+            </div>
+            
+            <div class="question" id="q6">
+                <label for="q6">Question 6: What's your interests?</label>
+                <div class="option">
+                    <label for="web">Web Development</label>
+                    <input type="checkbox" id="web" name="interest" value="web">
+                </div>
+                <div class="option">
+                    <label for="mobile">Mobile Development</label>
+                    <input type="checkbox" id="mobile" name="interest" value="mobile">
+                </div>
+                <div class="option">
+                    <label for="database">Database Management</label>
+                    <input type="checkbox" id="database" name="interest" value="database">
+                </div>
+                <div class="option">
+                    <label for="ai">Artificial Intelligence</label>
+                    <input type="checkbox" id="ai" name="interest" value="ai">
+                </div>
+            </div>
+
+            <div class="question" id="q7">
+                <label for="q7">Question 7: Which platform do you prefer to develop on?</label>
+                <div class="option">
+                    <label for="windows">Windows</label>
+                    <input type="radio" id="windows" name="platform" value="windows">
+                </div>
+                <div class="option">
+                    <label for="linux">Linux</label>
+                    <input type="radio" id="linux" name="platform" value="linux">
+                </div>
+                <div class="option">
+                    <label for="macOS">MacOS</label>
+                    <input type="radio" id="macOS" name="platform" value="macOS">
+                </div>
+            </div>
+
+            <div class="question" id="q8">
+                <label for="q8">Question 8: Which database systems do you use?</label>
+                <div class="option">
+                    <label for="mysql">MySQL</label>
+                    <input type="checkbox" id="mysql" name="databaseSystem" value="mysql">
+                </div>
+                <div class="option">
+                    <label for="postgresql">PostgreSQL</label>
+                    <input type="checkbox" id="postgresql" name="databaseSystem" value="postgresql">
+                </div>
+                <div class="option">
+                    <label for="mysql">MySQL</label>
+                    <input type="checkbox" id="mysql" name="databaseSystem" value="mysql">
+                </div>
+                <div class="option">
+                    <label for="mongodb">MongoDB</label>
+                    <input type="checkbox" id="mongodb" name="databaseSystem" value="mongodb">
+                </div>
+                <div class="option">
+                    <label for="sqlite">SQLite</label>
+                    <input type="checkbox" id="sqlite" name="databaseSystem" value="sqlite">
+                </div>
+                <div class="option">
+                    <label for="oracle">Oracle</label>
+                    <input type="checkbox" id="oracle" name="databaseSystem" value="oracle">
+                </div>
+            </div>
+
+            <div class="question" id="q9">
+                <label for="q9">Question 9: What development environments do you know?</label>
+                <div class="option">
+                    <label for="vsc">Visual Studio Code</label>
+                    <input type="checkbox" id="vsc" name="developmentEnvironment" value="vsc">
+                </div>
+                <div class="option">
+                    <label for="eclipse">Eclipse</label>
+                    <input type="checkbox" id="eclipse" name="developmentEnvironment" value="eclipse">
+                </div>
+                <div class="option">
+                    <label for="atom">Atom</label>
+                    <input type="checkbox" id="atom" name="developmentEnvironment" value="atom">
+                </div>
+                <div class="option">
+                    <label for="pycharm">PyCharm</label>
+                    <input type="checkbox" id="pycharm" name="developmentEnvironment" value="pycharm">
+                </div>
+            </div>
+
+            <div class="question" id="q10">
+                <label for="q10">Question 10: Which software development methodology do you prefer?</label>
+                <div class="option">
+                    <label for="agile">Agile</label>
+                    <input type="radio" id="agile" name="softwareDevelopment" value="agile">
+                </div>
+                <div class="option">
+                    <label for="scrum">Scrum</label>
+                    <input type="radio" id="scrum" name="softwareDevelopment" value="scrum">
+                </div>
+                <div class="option">
+                    <label for="devops">DevOps</label>
+                    <input type="radio" id="devops" name="softwareDevelopment" value="devops">
+                </div>
+                <div class="option">
+                    <label for="kanban">Kanban</label>
+                    <input type="radio" id="kanban" name="softwareDevelopment" value="kanban">
+                </div>
+            </div>
+
+        </form>
+    </div>
+    
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
