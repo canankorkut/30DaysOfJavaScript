@@ -12,22 +12,26 @@
         <h1 class="mt-4">Survey Form</h1>
         <form>
             <div class="question" id="q1">
-                <label for="name">Question 1: What's your name?</label>
+                <div class="question-status" id="q1-status"></div>
+                <label for="name" class="question-title">Question 1: What's your name?</label>
                 <input type="text" id="name" name="name">
             </div>
 
             <div class="question" id="q2">
-                <label for="surname">Question 2: What's your surname?</label>
+                <div class="question-status" id="q2-status"></div>
+                <label for="surname" class="question-title">Question 2: What's your surname?</label>
                 <input type="text" id="surname" name="surname">
             </div>
 
             <div class="question" id="q3">
-                <label for="age">Question 3: What's your age?</label>
+                <div class="question-status" id="q3-status"></div>
+                <label for="age" class="question-title">Question 3: What's your age?</label>
                 <input type="number" id="age" name="age">
             </div>
 
             <div class="question" id="q4">
-                <label for="experience">Question 4: What's your level of experience?</label>
+                <div class="question-status" id="q4-status"></div>
+                <label for="experience" class="question-title">Question 4: What's your level of experience?</label>
                 <div class="option">
                     <label for="beginner">Beginner</label>
                     <input type="radio" id="beginner" name="experience" value="beginner">
@@ -43,7 +47,8 @@
             </div>
 
             <div class="question" id="q5">
-                <label for="q5">Question 5: Which programming languages ​do you know?</label>
+                <div class="question-status" id="q5-status"></div>
+                <label for="q5" class="question-title">Question 5: Which programming languages ​do you know?</label>
                 <div class="option">
                     <label for="python">Python</label>
                     <input type="checkbox" id="python" name="programs" value="python">
@@ -64,10 +69,15 @@
                     <label for="php">PHP</label>
                     <input type="checkbox" id="php" name="programs" value="php">
                 </div>
+                <div class="other">
+                    <label for="other">Other: </label>
+                    <input type="text" id="other5" name="programs">
+                </div>
             </div>
             
             <div class="question" id="q6">
-                <label for="q6">Question 6: What's your interests?</label>
+                <div class="question-status" id="q6-status"></div>
+                <label for="q6" class="question-title">Question 6: What's your interests?</label>
                 <div class="option">
                     <label for="web">Web Development</label>
                     <input type="checkbox" id="web" name="interest" value="web">
@@ -84,10 +94,15 @@
                     <label for="ai">Artificial Intelligence</label>
                     <input type="checkbox" id="ai" name="interest" value="ai">
                 </div>
+                <div class="other">
+                    <label for="other">Other: </label>
+                    <input type="text" id="other6" name="interest">
+                </div>
             </div>
 
             <div class="question" id="q7">
-                <label for="q7">Question 7: Which platform do you prefer to develop on?</label>
+                <div class="question-status" id="q7-status"></div>
+                <label for="q7" class="question-title">Question 7: Which platform do you prefer to develop on?</label>
                 <div class="option">
                     <label for="windows">Windows</label>
                     <input type="radio" id="windows" name="platform" value="windows">
@@ -103,7 +118,8 @@
             </div>
 
             <div class="question" id="q8">
-                <label for="q8">Question 8: Which database systems do you use?</label>
+                <div class="question-status" id="q8-status"></div>
+                <label for="q8" class="question-title">Question 8: Which database systems do you use?</label>
                 <div class="option">
                     <label for="mysql">MySQL</label>
                     <input type="checkbox" id="mysql" name="databaseSystem" value="mysql">
@@ -128,10 +144,15 @@
                     <label for="oracle">Oracle</label>
                     <input type="checkbox" id="oracle" name="databaseSystem" value="oracle">
                 </div>
+                <div class="other">
+                    <label for="other">Other: </label>
+                    <input type="text" id="other8" name="databaseSystem">
+                </div>
             </div>
 
             <div class="question" id="q9">
-                <label for="q9">Question 9: What development environments do you know?</label>
+                <div class="question-status" id="q9-status"></div>
+                <label for="q9" class="question-title">Question 9: What development environments do you know?</label>
                 <div class="option">
                     <label for="vsc">Visual Studio Code</label>
                     <input type="checkbox" id="vsc" name="developmentEnvironment" value="vsc">
@@ -148,10 +169,15 @@
                     <label for="pycharm">PyCharm</label>
                     <input type="checkbox" id="pycharm" name="developmentEnvironment" value="pycharm">
                 </div>
+                <div class="other">
+                    <label for="other">Other: </label>
+                    <input type="text" id="other9" name="developmentEnvironment">
+                </div>
             </div>
 
             <div class="question" id="q10">
-                <label for="q10">Question 10: Which software development methodology do you prefer?</label>
+                <div class="question-status" id="q10-status"></div>
+                <label for="q10" class="question-title">Question 10: Which software development methodology do you prefer?</label>
                 <div class="option">
                     <label for="agile">Agile</label>
                     <input type="radio" id="agile" name="softwareDevelopment" value="agile">
@@ -168,8 +194,16 @@
                     <label for="kanban">Kanban</label>
                     <input type="radio" id="kanban" name="softwareDevelopment" value="kanban">
                 </div>
+                <div class="other">
+                    <label for="other">Other: </label>
+                    <input type="text" id="other10" name="softwareDevelopment">
+                </div>
             </div>
 
+            <div class="submit d-flex justify-content-center mb-5 mt-5">
+                <button class="btn btn-light btn-lg" type="submit">Submit</button>
+            </div>
+            
         </form>
     </div>
     
