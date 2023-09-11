@@ -1,2 +1,3 @@
 # Survey-Form  
-![2023-09-11_03-46-19](https://github.com/canankorkut/30DaysOfJavaScript/assets/99427828/e9d353c9-f8f4-4c1e-b9d3-db8e8405967d)
+![2023-09-11_11-33-12](https://github.com/canankorkut/30DaysOfJavaScript/assets/99427828/8ac6edd7-3bf8-4945-b1a7-fe877a80e84e)
+
