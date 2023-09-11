@@ -14,6 +14,16 @@
     margin-top: 30px;
 }
 
+.question-title {
+    font-size: 18px;
+}
+
+.question-status {
+    display: flex;
+    justify-content: end;
+    color: red;
+}
+
 .option {
     display: flex;
     justify-content: space-between;
@@ -22,6 +32,17 @@
     padding: 10px 20px;
 }
 
+.other {
+    display: flex;
+    border: 1px solid lightgray;
+    margin-top: 7px;
+    padding: 10px 20px;
+}
+
 label {
     margin-bottom: 10px;
+}
+
+.btn {
+    width: 250px;
 }
