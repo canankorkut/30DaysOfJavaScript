@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function(){
         softwareDevelopmentStatus.innerHTML = "" // clears the error message
       }
 
-      alert("Form başarıyla tamamlandı."); // Indicates that the form was completed successfully
+      alert("Form completed successfully."); // Indicates that the form was completed successfully
       document.querySelector("form").reset(); // Resets the form
       window.scrollTo(0, 0); // Goes to the top of the page
     }
