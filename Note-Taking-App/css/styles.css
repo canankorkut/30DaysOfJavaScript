@@ -10,6 +10,19 @@
     background-color: #bfd7ff;
 }
 
+#saveNote {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    cursor: pointer;
+}
+
+#deleteNote {
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
 .addNotes {
     display: flex;
     justify-content: center;
@@ -18,10 +31,27 @@
     color: #788bff;
 }
 
+.custom-note {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
 .notePage {
     width: 100%; 
     height: 100%;
     position: fixed;
     display: none;
     transition: all 0.3s ease-in-out; 
+}
+
+.editable {
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.editable:focus {
+    outline: none;
 }
