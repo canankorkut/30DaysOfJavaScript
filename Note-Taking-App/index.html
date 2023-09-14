@@ -10,23 +10,22 @@
 </head>
 <body>
     <div class="background" style="height: 100vh;">
-        <div class="addNotes noteCard" style="width: 250px; height: 250px;">
-            <i class="fa-solid fa-plus" id="addNoteButton"></i>
-            <p>Add new note</p>
-        </div>
-
-        <div class="notePage noteCard">
-            <div class="notePage-content">
-                <p id="noteDate"></p>
-                <span class="close" id="closeNotePage" style="position: absolute; top: 10px; right: 10px; cursor: pointer;">&times;</span>
-                <h2 class="editable" id="noteTitle" contenteditable="true"></h2>
-                <p class="editable" id="noteText" contenteditable="true"></p>
-                <button id="saveNote" type="button" class="btn btn-dark">Save</button>  
-                <i class="fa-solid fa-trash" id="deleteNote"></i> 
+        <div id="addedNotes">
+            <div class="addNotes noteCard" style="width: 250px; height: 250px;">
+                <i class="fa-solid fa-plus" id="addNoteButton"></i>
+                <p>Add new note</p>
             </div>
         </div>
 
-        <div id="addedNotes"></div>
+        <div class="notePage noteCard" style="margin:0">
+            <div class="notePage-content">
+                <p id="noteDate" style="margin-left: 10px;"></p>
+                <button id="saveNote" type="button" class="btn btn-outline-dark">Save</button>  
+                <span class="close" id="closeNotePage" style="position: absolute; top: 10px; right: 30px; cursor: pointer; font-size: 35px;">&times;</span>
+                <h2 class="editable" id="noteTitle" contenteditable="true"></h2>
+                <p class="editable" id="noteText" contenteditable="true"></p> 
+            </div>
+        </div>
         
     </div>
     <script src="app.js"></script>
