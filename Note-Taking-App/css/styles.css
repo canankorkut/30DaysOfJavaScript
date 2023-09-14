@@ -1,20 +1,40 @@
 .background {
     background-color: #788bff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: baseline;
     height: 100vh;
 }
+
+#addedNotes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .noteCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     border-radius: 10px;
+    margin: 40px;
     background-color: #bfd7ff;
+}
+
+.noteCard:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.notePage-content {
+    padding: 20px;
 }
 
 #saveNote {
     position: absolute;
-    bottom: 30px;
-    left: 30px;
+    top: 20px;
+    right: 100px;
     cursor: pointer;
+    width: 80px;
 }
 
 #deleteNote {
@@ -28,7 +48,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
     color: #788bff;
+    font-size: 20px;
 }
 
 .custom-note {
