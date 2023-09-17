@@ -1,13 +1,20 @@
 const addButton = document.querySelector("#addTask")
 const taskContainer = document.querySelector(".task-container")
+const taskInput = document.querySelector("input[type='text']")
 
 addButton.addEventListener("click", () => {
+    const taskTitleValue = taskInput.value.trim()
+
+    if(taskTitleValue.trim() === "") {
+        return
+    }
+    
     const newTaskDiv = document.createElement("div")
     newTaskDiv.classList.add("task", "d-flex", "justify-content-between", "flex-column", "mt-3")
     
     const taskTitle = document.createElement("div")
     taskTitle.classList.add("task-title")
-    taskTitle.innerHTML = `<p>Count-up Timer</p>`
+    taskTitle.innerHTML = `<p>${taskTitleValue}</p>`
 
     const timeDiv = document.createElement("div")
     timeDiv.classList.add("time")
@@ -52,5 +59,7 @@ addButton.addEventListener("click", () => {
     newTaskDiv.appendChild(taskEdit);
 
     taskContainer.appendChild(newTaskDiv);
+
+    taskInput.value = ""
 
 })
