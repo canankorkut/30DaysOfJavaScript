@@ -7,6 +7,10 @@
     height: 100vh;
 }
 
+h1 {
+    padding-top: 50px;
+}
+
 .task {
     width: 400px;
     height: 200px;
