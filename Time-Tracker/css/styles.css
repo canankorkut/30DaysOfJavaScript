@@ -18,3 +18,13 @@ h1 {
     border: 1px solid #ffffff;
     padding: 20px;
 }
+
+.timeDiv {
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.start, .stop {
+    margin-right: 5px;
+}
