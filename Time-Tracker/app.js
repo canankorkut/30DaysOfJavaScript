@@ -35,30 +35,25 @@ addButton.addEventListener("click", () => {
     resetButton.classList.add("reset", "btn", "btn-outline-secondary")
     resetButton.textContent = "Reset"
 
-    const taskEdit = document.createElement("div")
-    taskEdit.classList.add("task-edit", "d-flex", "justify-content-center", "mt-2")
-
-    const editButton = document.createElement("button")
-    editButton.classList.add("edit", "btn", "btn-outline-light")
-    editButton.textContent = "Edit Task"
+    const taskDelete = document.createElement("div")
+    taskDelete.classList.add("task-edit", "mt-2")
 
     const deleteButton = document.createElement("button")
-    deleteButton.classList.add("delete", "btn", "btn-outline-danger", "ms-2")
+    deleteButton.classList.add("delete", "btn", "btn-outline-danger")
     deleteButton.textContent = "Delete Task"
-    
-    timeActions.appendChild(startButton);
-    timeActions.appendChild(stopButton);
-    timeActions.appendChild(resetButton);
 
-    taskEdit.appendChild(editButton);
-    taskEdit.appendChild(deleteButton);
+    timeDiv.appendChild(timeActions)
+    timeActions.appendChild(startButton)
+    timeActions.appendChild(stopButton)
+    timeActions.appendChild(resetButton)
 
-    newTaskDiv.appendChild(taskTitle);
-    newTaskDiv.appendChild(timeDiv);
-    newTaskDiv.appendChild(timeActions);
-    newTaskDiv.appendChild(taskEdit);
+    taskDelete.appendChild(deleteButton)
 
-    taskContainer.appendChild(newTaskDiv);
+    newTaskDiv.appendChild(taskTitle)
+    newTaskDiv.appendChild(timeDiv)
+    newTaskDiv.appendChild(taskDelete)
+
+    taskContainer.appendChild(newTaskDiv)
 
     taskInput.value = ""
 
