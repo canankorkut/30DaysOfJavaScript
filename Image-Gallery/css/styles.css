@@ -1,0 +1,57 @@
+#fileInput {
+    display: none;
+}
+
+#imageUpload {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    padding: 10px 15px;
+}
+
+#imageUpload:hover {
+    transform: scale(1.1);
+}
+
+#imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between images */
+}
+
+.image-item {
+    width: calc(25% - 20px); /* Element width calculated by subtracting 20 pixels reduced by 25%  */
+    height: auto;
+    margin: 0;
+    position: relative;
+}
+
+.image-item:hover {
+    transform: scale(1.1);
+}
+
+.image-item i {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #b2b1cf;
+}
+
+#displayedImage {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    background-color: black;
+}
+
+#displayedImage img {
+    max-width: 70%;
+    max-height: 70%;
+    margin: auto;
+}
+
