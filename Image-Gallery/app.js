@@ -9,12 +9,12 @@ fileInput.addEventListener('change', function(e) {
     // Gets the first selected file
     const selectedFile = e.target.files[0]
     if(selectedFile) {
-        const imageContainer = document.createElement('div');
-        imageContainer.className = 'image-item';
+        const imageContainer = document.createElement('div')
+        imageContainer.className = 'image-item'
 
         // Preview the image
         const imageElement = document.createElement('img')
-        //It converts the URL of the selected image to enable the browser to access its content.
+        //It converts the URL of the selected image to enable the browser to access its content
         imageElement.src = URL.createObjectURL(selectedFile)
 
         // Adjusts the size of the image when uploading it
@@ -22,21 +22,21 @@ fileInput.addEventListener('change', function(e) {
         imageElement.style.height = 'auto' 
 
         // Adds the delete icon
-        const deleteIcon = document.createElement('i');
-        deleteIcon.className = 'fa-solid fa-trash';
+        const deleteIcon = document.createElement('i')
+        deleteIcon.className = 'fa-solid fa-trash'
 
         // Adds imageElement to imageContainer div
-        imageContainer.appendChild(imageElement);
+        imageContainer.appendChild(imageElement)
 
         // Adds deleteIcon to imageContainer div
-        imageContainer.appendChild(deleteIcon);
+        imageContainer.appendChild(deleteIcon)
         
         // Occurs when deleteIcon is clicked
         deleteIcon.addEventListener('click', function() {
             // Gets the linked item
-            const imageItem = this.closest('.image-item');
+            const imageItem = this.closest('.image-item')
             if (imageItem) {
-                imageItem.remove();
+                imageItem.remove()
             }
         });
 
