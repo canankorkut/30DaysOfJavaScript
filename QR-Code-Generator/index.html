@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #0466c8;">
+    <!-- Main container -->
+    <div class="QR-code-generator">
+        <h1>QR Code Generator</h1>
+        <label for="input" id="label">Enter a URL or text to create a QR code:</label>
+        <input type="text" placeholder="Enter text or URL" id="input">
+        <!-- Container to display error messages -->
+        <div id="error-message"></div>
+        <button type="button" class="btn btn-primary" id="generateBtn">Generate QR Code</button>
+        <!-- Container to display QR code -->
+        <div id="qr-code"></div>
+    </div>
+    <!-- JavaScript file -->
+    <script src="app.js"></script>
+    <!-- QR code library to create QR code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <!-- Bootstrap library -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
