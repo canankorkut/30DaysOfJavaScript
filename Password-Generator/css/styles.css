@@ -1,0 +1,57 @@
+#page-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #89c2d9;
+    color: #ffffff;
+}
+
+#password-generator {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #468faf;
+}
+
+#inputDiv {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+#inputDiv {
+    position: relative;
+    display: inline-block;
+}
+
+#password {
+    width: 100%;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+}
+
+#copy {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #000000;
+}
+
+.contentsDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 5px 6px;
+    border-radius: 5px;
+    background-color: #89c2d9;
+}
+
+label {
+    font-size: large;
+}
+
