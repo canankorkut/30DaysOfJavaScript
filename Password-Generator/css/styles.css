@@ -17,13 +17,9 @@
 
 #inputDiv {
     display: flex;
+    position: relative;
     margin-top: 5px;
     margin-bottom: 12px;
-}
-
-#inputDiv {
-    position: relative;
-    display: inline-block;
 }
 
 #password {
@@ -33,7 +29,7 @@
     border-radius: 5px;
 }
 
-#copy {
+#copyIcon {
     position: absolute;
     top: 50%;
     right: 5px;
@@ -42,7 +38,7 @@
     color: #000000;
 }
 
-.contentsDiv {
+.contentDiv {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
