@@ -1,0 +1,29 @@
+#page-body {
+    display: flex;
+    justify-content: center;  
+    min-height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.random-image-generator {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type=number] {
+    width: 100px;
+}
+
+.randomImg {
+    display: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
